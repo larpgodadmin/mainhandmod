@@ -1,24 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "doublehandcrystal",
+  "id": "mainhandmod",
   "version": "${version}",
-  "name": "DoubleHandCrystal",
-  "description": "",
-  "authors": [],
+  "name": "mainhandmod",
+  "description": "Fully mainhand mod ported by 3958",
+  "authors": ["3958"],
   "contact": {
-    "repo": "https://github.com/cattyngmd/DoubleHandCrystal"
+    "repo": "https://github.com/cattyngmd/double-hand-crystal"
   },
   "license": "MIT",
-  "icon": "assets/doublehandcrystal/icon.png",
   "environment": "client",
   "entrypoints": {
-
+    "client": [
+      "dev.cattyn.doublehandcrystal.DoubleHandCrystalClient"
+    ]
   },
   "mixins": [
-    "doublehandcrystal.mixins.json"
+    "mainhandmod.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "java": ">=25"
   }
 }

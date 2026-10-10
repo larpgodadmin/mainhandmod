@@ -2,11 +2,12 @@
   "required": true,
   "minVersion": "0.8",
   "package": "dev.cattyn.doublehandcrystal.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "MixinHeldItemRenderer"
-  ],
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [],
   "client": [
+    "MixinHeldItemRenderer",
+    "MixinChatScreen",
+    "MixinOptionsSubScreen"
   ],
   "injectors": {
     "defaultRequire": 1
